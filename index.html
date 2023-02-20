@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container my-4">
+          <a class="navbar-brand d-flex align-items-center m-0 p-0 text-white" href="#">
+            <span class="me-1">
+                <img src="images/logo.png" alt="">
+            </span>
+            <span class="logo-description ms-1">
+                <h4>Weather</h4>
+                <h6>Discover Forecasts</h6>
+            </span>
+        </a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-3">
+              <li class="nav-item">
+                <button class="btn btn-outline-light rounded-pill py-1 active">Home</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-outline-light rounded-pill py-1">News</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-outline-light rounded-pill py-1">Live Cameras</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-outline-light rounded-pill py-1">Photos</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-outline-light rounded-pill py-1">Contact</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <section id="content" class="w-100">
+        <div class="container">
+            <form id="find" class="py-5 position-relative">
+                <input class="form-control rounded-pill shadow-none border-0 p-3 my-4" type="text" name="" id="location-input" placeholder="Find Your Location...">
+                <button class="btn btn-primary rounded-pill position-absolute">Find</button>
+            </form>
+            <div class="row bg-black mb-5">
+                <div id="current" class="col-md-4 p-0"></div>
+                <div class="col-md-8">
+                    <div id="forecast" class="row"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-7 py-4">
+                    <form id="subscribe" class="position-relative">
+                        <input class="form-control rounded-pill shadow-none border-0 p-3" type="text" name="" id="location-input" placeholder="Enter Your Email...">
+                        <button class="btn btn-primary rounded-pill position-absolute">Subscribe</button>
+                    </form>
+                </div>
+                <div class="social col-md-4 offset-md-1 d-flex">
+                    <div class="fs-4 d-flex gap-2">
+                        <span><i class="fa-brands fa-facebook-f"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                        <span><i class="fa-brands fa-google-plus-g"></i></span>
+                        <span><i class="fa-brands fa-pinterest"></i></span>
+                    </div>
+                </div>
+                <div class="py-4 text-center">
+                    <p class="text-white fs-6">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
